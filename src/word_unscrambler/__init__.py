@@ -14,6 +14,9 @@ def unscramble(scrambled_word):
     Returns:
         set: A set of valid unscrambled words.
     """
+    scrambled_word = scrambled_word.lower()
+    if not(scrambled_word.isalpha()):
+        raise ValueError("May only contain letters")
     # Initialize the English dictionary
     dictionary = enchant.Dict("en_US")
 

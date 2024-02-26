@@ -3,12 +3,12 @@ requires = ["hatchling", "enchant"]
 build-backend = "hatchling.build"
 
 [project]
-name = "example_package_YOUR_USERNAME_HERE"
-version = "0.0.1"
+name = "word_unscrambler"
+version = "0.1.0"
 authors = [
   { name="Rufus Gordon-Heywood", email="rufus.gordonheywood@education.nsw.gov.au" },
 ]
-description = "A small example package"
+description = "A python module that unscrambles characters into words"
 readme = "README.md"
 requires-python = ">=3.5"
 classifiers = [
@@ -18,5 +18,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/rufus-gh/word-unscrambler/"
+Issues = "https://github.com/rufus-gh/word-unscrambler/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/word_unscrambler"]
